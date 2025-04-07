@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.75)), url(https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.banner .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+.banner .navbar .logo {
+    color: #fff;
+}
+
+.banner .navbar .logo span {
+    color: rgb(77, 204, 255);
+}
+
+.banner .navbar ul {
+    display: flex;
+    margin-left: 120px;
+    gap: 60px;
+    list-style: none;
+}
+
+.banner .navbar ul li {
+    text-transform: capitalize;
+    color: #ffffff98;
+    border-bottom: 2.5px solid transparent;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.4s all;
+}
+
+.banner .navbar ul li:hover {
+    color: #fff;
+    border-bottom: 2.5px solid rgb(77, 204, 255);
+}
+
+.banner .navbar .btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner .navbar .btns .btn_one {
+    background: transparent;
+    border: transparent;
+    border-radius: 40px;
+    padding: 3px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+
+.banner .navbar .btns .btn_two {
+    background: transparent;
+    border: transparent;
+    border-radius: 40px;
+    padding: 3px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+
+.banner .navbar .btns .btn_one:hover {
+    color: #fff;
+    background: rgba(95, 190, 245, 0.74);
+}
+
+.banner .navbar .btns .btn_two:hover {
+    background: rgba(95, 193, 250, 0.712);
+    border: transparent;
+}
+
+.banner .content {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    transform: translateX(-700px);
+    text-align: center;
+    opacity: 0;
+}
+
+.banner .content h1 {
+    color: #fff;
+    font-size: 4.5rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    z-index: 10;
+}
+
+.banner .content span {
+    color: rgb(77, 204, 255);
+    font-weight: 700;
+}
+
+.banner .content h1::after {
+    content: "";
+    display: block;
+    width: 820px;
+    margin: 0 auto;
+    border-bottom: 3.5px solid rgb(77, 204, 255);
+}
+
+.banner .content p {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #cccbcb;
+}
+
+.banner .content .social_media {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 48%;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.banner .content .social_media i {
+    padding-bottom: 5px;
+    font-size: 1.3rem;
+    color: #cccbcb;
+    border-bottom: 2.5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+
+.banner .content .social_media i:hover {
+    color: #ffffff;
+    border-bottom: 2.5px solid rgb(77, 204, 255);
+}
+
+@media screen and (max-width:768px) {
+
+    .banner .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner .navbar ul {
+        padding-top: 18px;
+        margin-left: 0;
+        gap: 12px;
+    }
+
+    .banner .navbar .btns {
+        display: none;
+    }
+
+    .banner .content{
+        top: 30%;
+    }
+
+    .banner .content h1{
+        text-align: center;
+        font-size: 2.7rem;
+    }
+
+    .banner .content h1::after{
+        width: 335px;
+    }
+
+    .banner .content p{
+        margin-left: 23px;
+        text-align: center;
+        width: 88%;
+    }
+
+    .banner .content .social_media{
+        left: 38%;
+    }
+
+
+
+
+}
